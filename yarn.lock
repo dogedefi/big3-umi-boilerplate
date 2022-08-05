@@ -2731,10 +2731,10 @@ big3-fast-marquee@^1.3.3:
   dependencies:
     resize-observer-polyfill "^1.5.1"
 
-big3-styled-base@^1.2.6:
-  version "1.2.6"
-  resolved "https://registry.npmjs.org/big3-styled-base/-/big3-styled-base-1.2.6.tgz#45a5c50db6cb264faaacf154a2f556bc5f2d2ae1"
-  integrity sha512-N52Rz7o0c91QBHIZ44tcY1PAplkkqQGmsio/G4PGcevVcf3iZ+L+ltGGWT6bXO1HtRWAFknQsYgeQSw+EE+wxg==
+big3-styled-base@^1.2.8:
+  version "1.2.8"
+  resolved "https://registry.npmjs.org/big3-styled-base/-/big3-styled-base-1.2.8.tgz#30029e625c193b8a46e8901b90bd75f40493275f"
+  integrity sha512-QAtHcRV26Fz8TBkl+GOyjwYug0lvhIgSW1vGtUZqIP0i3VS9q9yU6hSiy31pP5S/ILAEvVmH1lOo/thheGzZPA==
   dependencies:
     lodash.kebabcase "^4.1.1"
     lodash.throttle "^4.1.1"

@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Big3FlexBox } from 'big3-styled-base';
 
-const WiredLoading: FC = () => {
+const Loading: FC = () => {
     return (
         <Big3FlexBox
             position="fixed"
@@ -19,6 +19,6 @@ const WiredLoading: FC = () => {
     );
 };
 
-WiredLoading.displayName = WiredLoading.name;
+Loading.displayName = Loading.name;
 
-export default WiredLoading;
+export default Loading;
