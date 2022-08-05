@@ -7,6 +7,7 @@
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
+    "generate": "new-component",
     "analyze": "cross-env ANALYZE=1 umi build"
   },
   "gitHooks": {
@@ -45,6 +46,7 @@
     "@umijs/preset-react": "1.x",
     "@umijs/test": "^3.5.5",
     "big3-adaptive-media-loader": "^1.0.1",
+    "big3-new-component": "^4.0.1",
     "big3-web3-umi-plugin": "^1.0.0",
     "cross-env": "^7.0.3",
     "dotenv": "^16.0.1",
