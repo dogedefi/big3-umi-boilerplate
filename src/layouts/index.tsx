@@ -1,5 +1,6 @@
-import './index.less';
-import './mobile.less';
+import desktop from './index.less';
+import mobile from './mobile.less';
+import useStyle from '@/hooks/useStyle';
 
 import { ThemeProvider } from 'wired-styled-px2vw';
 import { IRouteComponentProps, useModel } from 'umi';
@@ -9,6 +10,7 @@ import { useMemo } from 'react';
 import { Big3PortalNode, Big3Layout } from 'big3-styled-base';
 
 export default function Layout({ children }: IRouteComponentProps) {
+    const styles = useStyle(desktop, mobile);
     const { isMobile } = useModel('app');
 
     const wrappedTheme = useMemo(() => ({ isMobile }), [isMobile]);
