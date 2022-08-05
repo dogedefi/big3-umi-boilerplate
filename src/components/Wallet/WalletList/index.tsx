@@ -55,6 +55,17 @@ const WalletModal: FC<Big3Props<HTMLDivElement> & ModalProps> = (props) => {
         }
     }, [readyState, account, provider, chainChanged]);
 
+    const handleConnect = (config: Config) => {
+        onCancel(null);
+
+        if (connected) {
+            handleLogin();
+        } else {
+            connect(config);
+            setConnecting(true);
+        }
+    };
+
     useEffect(() => {
         // add to event bus
         eventBus.$on(EventBus.UNAUTHORIZED, handleLogin);
@@ -98,20 +109,6 @@ const WalletModal: FC<Big3Props<HTMLDivElement> & ModalProps> = (props) => {
 
         return () => eventBus.$off(EventBus.UNAUTHORIZED);
     }, [handleLogin, chainChanged, allNotConnected, accountDisconnected, accountConnected, accountsChanged, account]);
-
-    const handleConnect = useCallback(
-        (config: Config) => {
-            onCancel(null);
-
-            if (connected) {
-                handleLogin();
-            } else {
-                connect(config);
-                setConnecting(true);
-            }
-        },
-        [onCancel],
-    );
 
     return (
         <AntModal footer={null} title="Sign in your crypto wallet" visible={visible} onCancel={onCancel} width={448}>
