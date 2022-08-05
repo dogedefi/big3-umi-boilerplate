@@ -1,0 +1,167 @@
+:root {
+    // font
+    --roboto-font: 'Roboto';
+    --bitter-font: 'Bitter';
+
+    // color
+    --primary-color: #503e9d;
+    --white-color: #ffffff;
+    --pink-color: #dc7e8c;
+    --black-color: #182135;
+    --black-color-2: #292725;
+    --gray-color: #626264;
+    --gray-color-2: #777e91;
+    --gray-color-3: #6a778a;
+    --gray-color-4: #70788f;
+    --disabled-color: #a0a8b4;
+    --scrollbar-color: rgba(#a0a0a5, 0.3); // like mac
+    --danger-color: #cb2434;
+    --validation-error-color: #cb2434;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    scroll-behavior: smooth;
+}
+
+img {
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: var(--roboto-font), sans-serif;
+
+    a:hover {
+        color: var(--primary-color);
+    }
+
+    a:active {
+        color: var(--primary-color);
+    }
+
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+        color: var(--white-color);
+        border-color: transparent;
+    }
+
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover::before {
+        background-color: transparent;
+    }
+
+    .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+        color: var(--white-color);
+        background: var(--primary-color);
+        border-color: transparent;
+    }
+
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
+        background-color: transparent;
+    }
+
+    .ant-radio-button-wrapper:not(:first-child)::before {
+        display: none;
+    }
+
+    .ant-radio-button-wrapper:focus-within {
+        box-shadow: none;
+    }
+
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
+        box-shadow: none;
+    }
+
+    .ant-form-item-required::before {
+        display: none !important;
+    }
+
+    .ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+        border-color: var(--primary-color);
+        padding: 0;
+    }
+
+    .ant-input-affix-wrapper {
+        padding: 0;
+    }
+
+    .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+    .ant-checkbox:hover .ant-checkbox-inner,
+    .ant-checkbox-input:focus + .ant-checkbox-inner {
+        border-color: var(--primary-color);
+    }
+
+    p,
+    ul {
+        margin: 0;
+        padding: 0;
+        outline: none;
+        border: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        word-break: break-word;
+        white-space: pre-line;
+        margin: 0;
+    }
+
+    a,
+    span {
+        word-break: break-word;
+        // line-height: 200%;
+    }
+
+    * {
+        color: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+    }
+
+    .wired-ant-message {
+        .ant-message-notice-content {
+            border-radius: 6px;
+            background: #ffffff;
+
+            .ant-message-custom-content {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #182135;
+
+                > img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .wired-ant-message-success {
+        .ant-message-notice-content {
+            border: 1px solid #419d3e;
+        }
+    }
+
+    .wired-ant-message-fail {
+        .ant-message-notice-content {
+            border: 1px solid #d3505d;
+        }
+    }
+}

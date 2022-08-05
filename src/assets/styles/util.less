@@ -1,0 +1,101 @@
+#bgUtils {
+    .normalBg(@image, @color: transparent) {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(@image);
+        background-color: @color;
+        background-size: contain;
+        flex-shrink: 0;
+    }
+
+    .syntheticBg(@image, @ratio: 50%, @direct: 'horizontal') {
+        position: relative;
+
+        &:before {
+            flex: 1;
+            content: '';
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(@image);
+            pointer-events: none;
+            z-index: -1;
+
+            & when (@direct ='horizontal') {
+                width: calc(@ratio + 1px);
+                height: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                background-position: left top;
+            }
+
+            & when (@direct ='vertical') {
+                width: 100%;
+                height: calc(@ratio + 1px);
+                left: 50%;
+                transform: translateX(-50%);
+                top: 0;
+                background-position: left top;
+            }
+        }
+
+        &:after {
+            flex: 1;
+            content: '';
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(@image);
+            pointer-events: none;
+            z-index: -1;
+
+            & when (@direct ='horizontal') {
+                width: calc(@ratio + 1px);
+                height: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+                background-position: right bottom;
+            }
+
+            & when (@direct ='vertical') {
+                width: 100%;
+                height: calc(@ratio + 1px);
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 0;
+                background-position: left bottom;
+            }
+        }
+    }
+
+    .icon(@size, @image, @color: transparent, @pure: true) {
+        #bgUtils.normalBg(@image, @color);
+
+        width: @size;
+        height: @size;
+        display: inline-block;
+
+        & when (@pure =true) {
+            border: none;
+            outline: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .button(@image, @color: transparent) {
+        #bgUtils.normalBg(@image, @color);
+
+        border: none;
+        outline: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.actived-text(@color: var(--primary-color)) {
+    -webkit-text-stroke-width: var(--text-stroke-width);
+    -webkit-text-stroke-color: @color;
+}

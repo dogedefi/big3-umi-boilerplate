@@ -1,0 +1,41 @@
+@import (once) './global.less';
+
+:root {
+    --big-screen-width: 800px; // boundary
+    --design-draft-width: 375px;
+    --header-height: 70px;
+    --footer-height: 264px;
+    --footer-height-bottom: 24px;
+    --both-spacing: 12px;
+    --website-both-spacing: 24px;
+    --text-stroke-width: 0.666666px;
+    --label-height: 22px;
+    --label-margin-top: 12px;
+    --address-width: 320px;
+}
+
+#root {
+    position: relative;
+    z-index: 1;
+}
+
+#layer-1,
+#layer-2 {
+    overflow: visible !important; // Make Compatible with IOS
+
+    > div {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    -ms-overflow-style: none;
+    /* IE 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}

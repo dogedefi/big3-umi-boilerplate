@@ -1,0 +1,13 @@
+{
+    "ETH": {
+        "chainId": "0x1",
+        "chainName": "ETH Mainnet",
+        "nativeCurrency": {
+            "name": "ETH",
+            "symbol": "ETH",
+            "decimals": 18
+        },
+        "rpcUrls": ["https://mainnet.infura.io/v3/a892bade64884ad6a13cf9981de659eb/"],
+        "blockExplorerUrls": ["https://etherscan.io/"]
+    }
+}
