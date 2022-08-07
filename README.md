@@ -22,3 +22,7 @@ Supported by [`big3-new-component`](https://www.npmjs.com/package/big3-new-compo
 ```bash
 yarn generate Example -d src/pages
 ```
+
+## Big3 Kit
+
+Use [Big3 Kit](https://github.com/dogedefi/big3-ui) can help you to develop fastly
