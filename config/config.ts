@@ -16,6 +16,7 @@ export default defineConfig({
     ignoreMomentLocale: true,
     routes,
     fastRefresh: {},
+    alias: { 'project-ui': '/project-ui' },
     define: {
         'process.env.PROJECT': PROJECT,
         'process.env.MOBILE_DESIGN_DRAFT_WIDTH': MOBILE_DESIGN_DRAFT_WIDTH,
