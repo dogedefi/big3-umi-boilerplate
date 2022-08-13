@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
-import { throttle } from 'lodash';
+import throttle from 'lodash.throttle';
 import { checkIfMobile } from 'wired-styled-px2vw';
 
 const useAppModel = () => {

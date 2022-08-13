@@ -8,8 +8,7 @@ import { AntButton, AntModal } from '@/components';
 import { FC, useCallback, useEffect } from 'react';
 import { eventBus } from '@/utils/eventBus';
 import { EventBus, LocalStorage, RCP_NODE } from '@/config/constant';
-import { Big3Box, Big3FlexBox } from 'big3-styled-base';
-import { kebabCase } from 'lodash';
+import { Big3Box, Big3FlexBox, Big3Icon } from 'big3-styled-base';
 import { ModalProps } from 'antd';
 import { Big3Text } from 'big3-styled-base';
 import { Big3Props } from 'big3-styled-base/dist/interface';
@@ -118,19 +117,18 @@ const WalletModal: FC<Big3Props<HTMLDivElement> & ModalProps> = (props) => {
                         .filter(({ title }) => title === 'Metamask')
                         .map((walletConfig) => {
                             // WalletCard
-                            const { title, icon: WalletIcon } = walletConfig;
+                            const { title } = walletConfig;
 
                             return (
                                 <AntButton
                                     key={title}
                                     onClick={() => handleConnect(walletConfig)}
-                                    id={kebabCase(title)}
                                     width="100%"
                                     height={60}
                                 >
                                     <Big3FlexBox align="center" width="100%">
                                         <Big3FlexBox width={28}>
-                                            <WalletIcon />
+                                            <Big3Icon />
                                         </Big3FlexBox>
                                         <Big3Text
                                             marginLeft={10}
