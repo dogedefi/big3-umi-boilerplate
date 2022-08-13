@@ -17,6 +17,7 @@ export default defineConfig({
     routes,
     fastRefresh: {},
     alias: { 'project-ui': '/project-ui' },
+    headScripts: [{ src: '/fix-styled-override.js' }], // hoist styled css properties
     define: {
         'process.env.PROJECT': PROJECT,
         'process.env.MOBILE_DESIGN_DRAFT_WIDTH': MOBILE_DESIGN_DRAFT_WIDTH,
