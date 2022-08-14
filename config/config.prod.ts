@@ -49,8 +49,8 @@ export default defineConfig({
                         vendors: {
                             name: 'vendors',
                             chunks: 'all',
-                            test: /[\\/]node_modules[\\/](react(?!-ace)|lodash|moment|big3-web3|[@]?web3|[@]?ethers|[@]?apollo|[@]?graphql|styled-components|wired-styled-px2vw|big3-styled-base)/,
-                            priority: 12,
+                            test: /[\\/]node_modules[\\/](react(?!-ace)|lodash|moment|big3-web3|[@]?binance|[@]?web3|[@]?ethers|[@]?apollo|[@]?graphql|styled-components|wired-styled-px2vw|big3-styled-base)/,
+                            priority: 10,
                         },
                         antdesigns: {
                             name: 'antdesigns',
