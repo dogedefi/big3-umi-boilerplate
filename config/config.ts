@@ -9,7 +9,6 @@ const PRIMARY_COLOR = '#503e9d';
 export default defineConfig({
     title: 'Welcome to use!',
     theme: { '@primary-color': PRIMARY_COLOR },
-    plugins: [require.resolve('big3-web3-umi-plugin')],
     nodeModulesTransform: { type: 'none' },
     dynamicImport: { loading: '@/components/Loading' },
     metas: [{ httpEquiv: 'refresh', content: '600' }],

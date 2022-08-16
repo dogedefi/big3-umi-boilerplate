@@ -9,7 +9,6 @@ import { setLocale } from 'umi';
 import { ConfigProvider } from 'antd';
 import { RefreshContextProvider } from '@/contexts/RefreshContext';
 import { HelmetProvider } from 'react-helmet-async';
-import { getLibrary, Web3ReactProvider } from 'big3-web3';
 import { StyleSheetManager } from 'wired-styled-px2vw';
 
 setLocale('en-US', false);
@@ -18,11 +17,9 @@ export function rootContainer(container: any) {
     return (
         <StyleSheetManager disableCSSOMInjection>
             <ConfigProvider locale={enUS}>
-                <Web3ReactProvider getLibrary={getLibrary}>
-                    <HelmetProvider>
-                        <RefreshContextProvider>{container}</RefreshContextProvider>
-                    </HelmetProvider>
-                </Web3ReactProvider>
+                <HelmetProvider>
+                    <RefreshContextProvider>{container}</RefreshContextProvider>
+                </HelmetProvider>
             </ConfigProvider>
         </StyleSheetManager>
     );
