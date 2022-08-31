@@ -2747,10 +2747,10 @@ big3-new-component@^4.0.1:
     commander "^2.15.1"
     prettier "1.5.3"
 
-big3-styled-base@^1.3.8:
-  version "1.3.8"
-  resolved "https://registry.npmjs.org/big3-styled-base/-/big3-styled-base-1.3.8.tgz#50330932b62099324b1f5133cd7e95127615b24a"
-  integrity sha512-YB9U0puiKJDVUe9KH1k4N5Mzdu4CtZqxHpxlJzrSxSanXty0YPvPWTceM5kQ+IQv+u3nnc8UJnzqakWJ1y00iA==
+big3-styled-base@^1.3.16:
+  version "1.3.16"
+  resolved "https://registry.npmjs.org/big3-styled-base/-/big3-styled-base-1.3.16.tgz#b05cf746de3d78cb7b2b8702acf544566a540026"
+  integrity sha512-QcDEiShuqZJ71Re/1vHX18BEGL4iW/GULeRfgQHTsLLxLeySxAAm/Dj00jSkGnfaU32vtdWQxEegi0h+f/nlaA==
   dependencies:
     lodash.kebabcase "^4.1.1"
     lodash.throttle "^4.1.1"
@@ -2761,10 +2761,10 @@ big3-web3-umi-plugin@^1.0.0:
   resolved "https://registry.npmjs.org/big3-web3-umi-plugin/-/big3-web3-umi-plugin-1.0.0.tgz#b29510065ec9b58821f0cdd2a277ecf99231f265"
   integrity sha512-JUml5Fu874W9i8MZ0Bx6SiuVwrrKUTYzRE40jvBpLU6irRNBH05adiQhL9SIbp0x0O9UfJ1InJYryOOjiBJT6w==
 
-big3-web3@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.npmjs.org/big3-web3/-/big3-web3-1.0.4.tgz#90b87faa79ec37582c9e249f8e902607fa4f6347"
-  integrity sha512-WIUQVH9bbpqr8tKvDLL2nGI8Dciwzup2VD8q74JDq6ZVL56CAI0yFMbmwI5+3WmiFitKeiKviPR1aNRHKEC38g==
+big3-web3@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.npmjs.org/big3-web3/-/big3-web3-1.0.6.tgz#c34e70d6ff42979c150d0297772a99f2b54af44b"
+  integrity sha512-MWVWUmdYn789TcmtNhidADULiftWNzqoKv9v0WaXqF5CxJSix19eDbypSHb74JOkKguNblptMFnMMmei/G3uYg==
   dependencies:
     "@binance-chain/bsc-connector" "^1.0.0"
     "@web3-react/core" "^6.1.9"
