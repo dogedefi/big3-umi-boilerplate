@@ -2756,10 +2756,10 @@ big3-new-component@^4.0.1:
     commander "^2.15.1"
     prettier "1.5.3"
 
-big3-styled-base@^1.3.16:
-  version "1.3.16"
-  resolved "https://registry.npmjs.org/big3-styled-base/-/big3-styled-base-1.3.16.tgz#b05cf746de3d78cb7b2b8702acf544566a540026"
-  integrity sha512-QcDEiShuqZJ71Re/1vHX18BEGL4iW/GULeRfgQHTsLLxLeySxAAm/Dj00jSkGnfaU32vtdWQxEegi0h+f/nlaA==
+big3-styled-base@^1.3.17:
+  version "1.3.17"
+  resolved "https://registry.npmjs.org/big3-styled-base/-/big3-styled-base-1.3.17.tgz#84899f900a97c5e2ffce23335068733d19eb8056"
+  integrity sha512-2PdSdnT3xv1+pL0Mlf8W059aoMKkIrnRDrZtNofD4e/VhLhl2fX54ChkmMCFfZ7oEeYymKL+AHPSLOx5RGrH7A==
   dependencies:
     lodash.kebabcase "^4.1.1"
     lodash.throttle "^4.1.1"
