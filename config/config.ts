@@ -1,10 +1,7 @@
 import { defineConfig } from 'umi';
 import routes from './routes';
 import pxToViewPort from 'postcss-px-to-viewport';
-
-const PROJECT = 'Big3';
-const MOBILE_DESIGN_DRAFT_WIDTH = 375;
-const PRIMARY_COLOR = '#503e9d';
+import { MOBILE_DESIGN_DRAFT_WIDTH, PROJECT, PRIMARY_COLOR } from './constant';
 
 export default defineConfig({
     title: 'Welcome to use!',
